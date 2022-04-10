@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.StatisticalAttended"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/btn_backtkdd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_back"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Thống kê điểm danh"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/tt_mmh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã MH:"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tt_txt_mmh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tt_mmh"
+            android:text="CPM109"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tt_ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tt_mmh"
+            android:text="Môn học: "
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tt_txt_ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tt_txt_mmh"
+            android:layout_toRightOf="@id/tt_ten"
+            android:text="Tiếng Anh"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/tt_nhom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhóm: "
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@id/tt_ten"/>
+
+        <TextView
+            android:id="@+id/txt_nhom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tt_txt_ten"
+            android:layout_toRightOf="@+id/tt_nhom"
+            android:text="5"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_allbotron"
+        android:backgroundTint="@color/WhiteSmoke">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_header_updateprofile">
+
+                <TextView
+                    android:id="@+id/tt_dssv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Danh Sách Sinh viên"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="0.7"/>
+            <TextView
+                android:id="@+id/tt_sl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Số lượng sv: 40"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_weight="0.3"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="MSSV"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="HỌ VÀ TÊN"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:text="TỔNG BUỔI HỌC"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/list_tkdsdd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+        <Button
+            android:id="@+id/btn_xuatfile"
+            android:layout_marginTop="-50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/Blue_cd"
+            android:layout_marginRight="3dp"
+            android:text="xuất file"
+            android:layout_gravity="end"/>
+
+</LinearLayout>

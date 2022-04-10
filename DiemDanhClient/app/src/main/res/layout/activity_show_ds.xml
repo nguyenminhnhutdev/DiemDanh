@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.show_ds">
+    <RelativeLayout
+        android:id="@+id/backgroud_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/btn_backctbh"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Danh sách sinh viên"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/txt_groupsuject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backgroud_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="Danh sách sinh viên nhóm: "
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        />
+
+    <TextView
+        android:id="@+id/btn_link_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_groupsuject"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Link: "
+        android:textColor="@color/Blue_cd"
+        android:textSize="15dp" />
+</RelativeLayout>

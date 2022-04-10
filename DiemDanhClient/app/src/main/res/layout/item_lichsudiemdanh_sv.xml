@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <TextView
+            android:id="@+id/tt_gio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giờ: "
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/txt_lsdd_gio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tt_gio"
+            android:text="17:00:00"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/tt_ngay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày: "
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txt_lsdd_gio"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_lsdd_ngay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tt_ngay"
+            android:text="12/12/2021"
+            android:textColor="@android:color/black"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/tt_diemdanh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Điểm danh: "
+            android:layout_below="@id/tt_gio"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_lsdd_trangthai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tt_gio"
+            android:layout_toRightOf="@+id/tt_diemdanh"
+            android:text="Thành Công"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/tt_tenmh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên môn học: "
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/tt_diemdanh"/>
+
+        <TextView
+            android:id="@+id/txt_lsdd_tenmh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tt_diemdanh"
+            android:layout_toRightOf="@+id/tt_tenmh"
+            android:text="Công nghệ phần mềm"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+</LinearLayout>

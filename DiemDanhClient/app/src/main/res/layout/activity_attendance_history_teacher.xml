@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+        tools:context=".Activity.AttendanceHistoryTeacher">
+
+
+    <TextView
+        android:id="@+id/txt_idCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Nhóm: "
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+    <TextView
+        android:id="@+id/txt_Group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_idCourse"
+        android:text="Nhóm: "
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_NameTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_Group"
+        android:layout_marginTop="6dp"
+        android:text="Tên: "
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt_QuantilyStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_NameTeacher"
+        android:layout_marginTop="6dp"
+        android:text="Số lượng sinh viên: "
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+    <TextView
+        android:id="@+id/txt_CourseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_QuantilyStudent"
+        android:layout_marginTop="6dp"
+        android:text="Tên môn học:  "
+        android:textSize="20dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ListView
+        android:id="@+id/listView_StatusHitory"
+        android:layout_width="match_parent"
+        android:layout_height="50mm"
+        android:layout_below="@+id/txt_CourseName"
+        android:layout_marginTop="40dp">
+
+    </ListView>
+
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:id="@+id/item_attendance_history_teacher">
+    <TextView
+        android:id="@+id/item_dsddvm_mssv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.25"
+        android:text="1811061611"
+        android:gravity="center"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/item_dsddvm_hoten"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:textSize="16dp"
+        android:text="Trần Văn Bình"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/item_dsddvm_lop"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:text="18DTHB3"/>
+    <TextView
+        android:id="@+id/img_status_uncheck"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.15"
+        android:gravity="center"
+        android:background="@drawable/ic_uncheck"/>
+
+</LinearLayout>

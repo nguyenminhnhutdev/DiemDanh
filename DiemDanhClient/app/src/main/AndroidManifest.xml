@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_app_dd1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_app_dd1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true">
+        <activity
+
+            android:name=".Lichsudiemdanh_SV"
+            android:exported="false" />
+        <activity
+            android:name=".Chitiet_thongkediemdanh_GV"
+            android:exported="false" />
+        <activity
+            android:name=".Lichsudiemdanh_GV"
+            android:exported="false" />
+        <activity
+            android:name=".test_thongtinchitiet"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_thongtincanhanmoi"
+            android:exported="false" />
+        <activity
+            android:name=".Thongke_Diemdanh"
+            android:exported="false" />
+
+            android:name=".Activity.StatisticalAttended"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AttendanceHistoryTeacher"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.show_ds"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Show_Ds_Activity"
+            android:exported="false"
+            android:label="@string/title_activity_show_ds"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+
+        <activity
+            android:name=".Change_Password"
+            android:exported="false" />
+        <activity
+            android:name=".Forgot_Password"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Result_attendance"
+            android:exported="false" />
+        <activity
+            android:name=".Call_profile"
+            android:exported="false" />
+        <activity
+            android:name=".History_attendance"
+            android:exported="false" />
+        <activity
+            android:name=".weekly_calendar"
+            android:exported="false" />
+        <activity
+            android:name=".attendance_sv"
+            android:exported="false" />
+        <activity
+            android:name=".attendance_gv"
+            android:exported="false" />
+        <activity
+            android:name=".SessionDetaisSV"
+            android:exported="false" />
+        <activity
+            android:name=".SessionDetailsGV"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

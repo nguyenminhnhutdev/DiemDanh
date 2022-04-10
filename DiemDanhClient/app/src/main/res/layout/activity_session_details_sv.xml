@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".SessionDetaisSV">
+
+    <RelativeLayout
+        android:id="@+id/backgroud_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/btn_close1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Chi tiết buổi học"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_tenmonhoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backgroud_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:text="Tên môn học: Lập trình trên thiết bị di động"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/txt_tietbatdau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_tenmonhoc"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Tiết bắt đầu: 7"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txt_tiet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_tietbatdau"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Tiết: 7-11"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txt_thu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_tiet"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Thứ: 2"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txt_maphong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_thu"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Mã phòng: E1-02.03"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txt_ngayhoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_maphong"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Tiết: 7-11"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txt_lop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_ngayhoc"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Lớp: 18DTHXX"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txt_hocky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_lop"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Học kỳ: 1"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/txt_tengv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_hocky"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Tên giảng viên: Nguyễn Văn A"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/btn_diemdanhSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_tengv"
+        android:layout_gravity="center"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="62dp"
+        android:background="@drawable/blue_fill__rounded_color"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:text="Điểm danh"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+</RelativeLayout>

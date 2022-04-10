@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_session">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/style"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relagv_tiet"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/itemgv_tiet"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:src="@drawable/list"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+            <ImageView
+                android:layout_toRightOf="@+id/relagv_tiet"
+                android:id="@+id/line_height"
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/horhorizontal_line"
+                android:background="@color/WhiteSmoke"/>
+            <RelativeLayout
+                android:layout_toRightOf="@+id/line_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imge"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/txt_Course"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="-10dp"
+                    android:layout_toRightOf="@+id/imge"
+                    android:fontFamily="sans-serif"
+                    android:text="Nhóm môn học: "
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_GroupSubject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_Course"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="-10dp"
+                    android:layout_toRightOf="@+id/imge"
+                    android:fontFamily="sans-serif"
+                    android:text="Course: "
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_Class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_GroupSubject"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@+id/imge"
+                    android:fontFamily="sans-serif"
+                    android:text="Lớp: "
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+    <ImageView
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/horhorizontal_line"
+        android:layout_below="@+id/style"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/style"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/horhorizontal_line" />
+
+</RelativeLayout>

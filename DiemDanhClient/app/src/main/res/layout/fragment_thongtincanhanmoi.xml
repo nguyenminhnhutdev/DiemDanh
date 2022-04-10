@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_thongtincanhanmoi"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Thông tin cá nhân"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/profile_img"
+            android:layout_width="208dp"
+            android:layout_height="163dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="profile1.json"
+            app:lottie_loop="true"/>
+        <TextView
+            android:id="@+id/btn_ttcn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White_WhiteSmoke"
+            android:text="Tài khoản(1811061611)"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textAlignment="viewStart"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            app:layout_constraintWidth_percent=".8"
+            android:drawableLeft="@drawable/ic_user"
+            android:drawableRight="@drawable/ic_next"
+            android:drawablePadding="18dp"
+            android:elevation="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_img"
+            tools:ignore="RtlCompat" />
+        <TextView
+            android:id="@+id/btn_doimk_ttcn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White_WhiteSmoke"
+            android:text="Đổi mật khẩu"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textAlignment="viewStart"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintWidth_percent=".8"
+            android:drawableLeft="@drawable/ic_name"
+            android:drawablePadding="18dp"
+            android:elevation="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_img" />
+        <TextView
+            android:id="@+id/btn_logout_ttcn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đăng xuất"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:background="@color/White_WhiteSmoke"
+            android:textAlignment="viewStart"
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintWidth_percent=".8"
+            android:drawableLeft="@drawable/ic_exit"
+            android:drawablePadding="18dp"
+            android:elevation="3dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_img"
+            android:layout_marginBottom="10dp"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+</LinearLayout>

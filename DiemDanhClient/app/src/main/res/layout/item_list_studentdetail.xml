@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/item_student_session"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/txt_Card_student"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rela_tiet"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/itemsv_tiet"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Tiết 2-7"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <ImageView
+                android:layout_toRightOf="@+id/rela_tiet"
+                android:id="@+id/linestudent_height"
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/horhorizontal_line"
+                android:background="@color/WhiteSmoke"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/rela_tiet">
+
+                <TextView
+                    android:id="@+id/txt_CourseSV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="-10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Nhóm môn học: "
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_ClassSV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_CourseSV"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginBottom="-10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Course: "
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/txt_IdGroupSV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_ClassSV"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Lớp: "
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

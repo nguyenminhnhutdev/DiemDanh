@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chitiet_thongkediemdanh_GV"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/btn_back_cttkdd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_back"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Chi tiết điểm danh"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/tt_mmh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MSSV: "
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/txt_mssv_tk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1911061611"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/tt_mmh"/>
+        <TextView
+            android:id="@+id/tt_ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TÊN SV: "
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@+id/tt_mmh"/>
+
+        <TextView
+            android:id="@+id/txt_hoten_tk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_mssv_tk"
+            android:layout_toRightOf="@id/tt_ten"
+            android:text="Nguyễn Văn Bình"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/tt_nhom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lớp: "
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@id/tt_ten"/>
+        <TextView
+            android:id="@+id/txt_lop_tk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18DTHB3"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_below="@id/txt_hoten_tk"
+            android:layout_toRightOf="@+id/tt_nhom"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_header_updateprofile"
+        android:backgroundTint="@color/WhiteSmoke"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:text="Số buổi"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="Trạng thái"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:text="Thời gian buổi học"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:gravity="center"/>
+        </LinearLayout>
+        <ListView
+            android:id="@+id/list_chitietsvdd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".test_thongtinchitiet">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/btn_closettct"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Thông tin chi tiết"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tài khoản_1811061611"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:background="@color/White"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_name"
+            android:background="@drawable/vien_vuong"
+            android:drawablePadding="18dp"
+            android:elevation="3dp"
+            android:padding="5dp"
+            android:text="Nguyễn Văn Bình"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            app:layout_constraintWidth_percent=".8"
+            tools:ignore="MissingConstraints" />
+        <TextView
+
+            android:id="@+id/tv_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_birthday"
+            android:background="@drawable/vien_vuong"
+            android:drawablePadding="18dp"
+            android:elevation="3dp"
+            android:text="18/10/1998"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/profile_txtname"
+            app:layout_constraintWidth_percent=".8" />
+
+
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/vien_vuong"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="18dp"
+            android:elevation="3dp"
+            android:text="0364841459"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/profile_txtbirthday"
+            app:layout_constraintWidth_percent=".8" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/vien_vuong"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawablePadding="10dp"
+            android:elevation="3dp"
+            android:text="Phường 16, Quận 6, TP.HCM"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_txtmunber"
+            app:layout_constraintWidth_percent=".8" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_email"
+            android:background="@drawable/vien_vuong"
+            android:drawablePadding="10dp"
+            android:elevation="3dp"
+            android:text="abc123@gmail.com"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_txtaddress"
+            app:layout_constraintWidth_percent=".8" />
+    </LinearLayout>
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Thay đổi thông tin"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:background="@color/White_WhiteSmoke"
+        android:padding="5dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintWidth_percent=".8"
+        android:drawableLeft="@drawable/ic_name"
+        android:drawablePadding="18dp"
+        android:elevation="3dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_img"
+        android:layout_marginBottom="10dp"/>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_margin="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_allbotron"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:backgroundTint="@color/WhiteSmoke">
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="156dp"
+            android:layout_height="157dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="uncheck.json"
+            app:lottie_loop="true" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Điểm danh thất bại"
+            android:textStyle="bold"
+            android:backgroundTint="@color/Red"
+            android:textColor="@color/Black"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

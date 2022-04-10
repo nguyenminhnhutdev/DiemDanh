@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:id="@+id/txt_Mssv_Statictical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txt_Mssv_History"
+        android:fontFamily="sans-serif"
+        android:padding="18dp"
+        android:text="Họ ten "
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+    <TextView
+        android:id="@+id/txt_FullName_Statictical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txt_Mssv_History"
+        android:fontFamily="sans-serif"
+        android:padding="18dp"
+        android:text="Họ ten "
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+    <TextView
+        android:id="@+id/txt_NumberSessionAbsent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txt_Mssv_History"
+        android:fontFamily="sans-serif"
+        android:padding="18dp"
+        android:text="Họ ten "
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+    <TextView
+        android:id="@+id/txt_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txt_Mssv_History"
+        android:fontFamily="sans-serif"
+        android:padding="18dp"
+        android:text="/"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/txt_NumberSession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txt_Mssv_History"
+        android:fontFamily="sans-serif"
+        android:padding="18dp"
+        android:text="Họ ten "
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+
+
+</LinearLayout>

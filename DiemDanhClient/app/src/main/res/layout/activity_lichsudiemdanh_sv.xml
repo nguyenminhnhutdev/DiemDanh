@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lichsudiemdanh_SV"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_back"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Lịch sử điểm danh"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/btn_lichsu_date"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Ngày, Tháng, Năm"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:textColor="@color/black"/>
+    <ListView
+        android:id="@+id/list_lichsudiemdanh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
